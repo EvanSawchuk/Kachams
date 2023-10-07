@@ -60,8 +60,8 @@
                         <!-- 
 
                         -->
-                            <li class="scroll-to-section"><a href="#offers">Menu</a></li>
-                            <li class="scroll-to-section"><a href="#chefs">Chef</a></li> 
+                            <li class="scroll-to-section"><a href="#chefs">Chef</a></li>
+                            <li class="scroll-to-section"><a href="#offers">Menu</a></li> 
                             
                             <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li> 
                         </ul>        
@@ -169,7 +169,7 @@
                 <div class="col-lg-4 offset-lg-4 text-center">
                     <div class="section-heading">
                         <h6>Our Chef</h6>
-                        <h2>We offer the best ingredients for you</h2>
+                        <h2>We Offer The Best Ingredients For You</h2>
                     </div>
                 </div>
             </div>
@@ -495,24 +495,25 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-form">
-                        <form id="contact" action="" method="post">
+                        <form name="emailform" id="contact" action="https://formspree.io/f/xdorpjjy" method="POST">
+                          <input name="subject" type="hidden" value="Kachams Bakery">
                           <div class="row">
                             <div class="col-lg-12">
                                 <h4>Make An Order!</h4>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
-                                <input name="name" type="text" id="name" placeholder="Your Name*" required="">
+                                <input name="name" type="text" id="name" placeholder="Your Name*" required>
                               </fieldset>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
-                              <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email Address" required="">
+                              <input name="email" type="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email Address*" required>
                             </fieldset>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
-                                <input name="phone" type="text" id="phone" placeholder="Phone Number*" required="">
+                                <input name="phone" type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="15" placeholder="Phone Number* (123-456-7890)" required>
                               </fieldset>
                             </div>
                             <div class="col-md-6 col-sm-12">
@@ -522,8 +523,8 @@
                             </div>
                             <div class="col-lg-6">
                                 <div id="filterDate2">    
-                                  <div class="input-group date" data-date-format="dd/mm/yyyy">
-                                    <input  name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
+                                  <div data-date-format="dd/mm/yyyy">
+                                    <input  name="date" id="date" type="date" class="form-control" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
                                     <div class="input-group-addon" >
                                       <span class="glyphicon glyphicon-th"></span>
                                     </div>
@@ -547,7 +548,7 @@
                             </div>
                             <div class="col-lg-12">
                               <fieldset>
-                                <button type="submit" id="form-submit" class="main-button-icon">Make An Order</button>
+                                <button type="submit" id="form-submit" class="main-button-icon" value="Send">Make An Order</button>
                               </fieldset>
                             </div>
                           </div>
@@ -566,8 +567,8 @@
                 <div class="col-lg-4 col-xs-12">
                     <div class="right-text-content">
                             <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=100095088630342" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/kachams_desserts/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                     </div>
                 </div>
